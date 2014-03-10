@@ -20,6 +20,7 @@
 		24C732DD18CD27BE0055F706 /* BillyUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C732DC18CD27BE0055F706 /* BillyUtilsTests.m */; };
 		24C732E918CD280C0055F706 /* WatchmakerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C732E718CD280C0055F706 /* WatchmakerViewController.m */; };
 		24C732EA18CD280C0055F706 /* WatchmakerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24C732E818CD280C0055F706 /* WatchmakerViewController.xib */; };
+		37A4CDA818CE70FD00B1E0F1 /* WatchmakerSolution.m in Sources */ = {isa = PBXBuildFile; fileRef = 37A4CDA718CE70FD00B1E0F1 /* WatchmakerSolution.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		24C732E618CD280C0055F706 /* WatchmakerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WatchmakerViewController.h; sourceTree = "<group>"; };
 		24C732E718CD280C0055F706 /* WatchmakerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WatchmakerViewController.m; sourceTree = "<group>"; };
 		24C732E818CD280C0055F706 /* WatchmakerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WatchmakerViewController.xib; sourceTree = "<group>"; };
+		37A4CDA618CE70FD00B1E0F1 /* WatchmakerSolution.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WatchmakerSolution.h; sourceTree = "<group>"; };
+		37A4CDA718CE70FD00B1E0F1 /* WatchmakerSolution.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WatchmakerSolution.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +129,8 @@
 				24C732E618CD280C0055F706 /* WatchmakerViewController.h */,
 				24C732E718CD280C0055F706 /* WatchmakerViewController.m */,
 				24C732E818CD280C0055F706 /* WatchmakerViewController.xib */,
+				37A4CDA618CE70FD00B1E0F1 /* WatchmakerSolution.h */,
+				37A4CDA718CE70FD00B1E0F1 /* WatchmakerSolution.m */,
 				24C732CA18CD27BE0055F706 /* Images.xcassets */,
 				24C732B918CD27BE0055F706 /* Supporting Files */,
 			);
@@ -264,6 +269,7 @@
 				24C732C618CD27BE0055F706 /* AppDelegate.m in Sources */,
 				24C732BF18CD27BE0055F706 /* main.m in Sources */,
 				24C732E918CD280C0055F706 /* WatchmakerViewController.m in Sources */,
+				37A4CDA818CE70FD00B1E0F1 /* WatchmakerSolution.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,6 +482,7 @@
 				24C732E218CD27BE0055F706 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		24C732E318CD27BE0055F706 /* Build configuration list for PBXNativeTarget "BillyUtilsTests" */ = {
 			isa = XCConfigurationList;
@@ -484,6 +491,7 @@
 				24C732E518CD27BE0055F706 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

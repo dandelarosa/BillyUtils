@@ -7,13 +7,22 @@
 //
 
 #import "WatchmakerViewController.h"
+#import "WatchmakerSolution.h"
 
-@interface WatchmakerViewController ()
+@interface WatchmakerViewController () <NSTableViewDataSource, NSTableViewDelegate>
 
 @property (weak) IBOutlet NSTextField *smallGearwheelValueTextField;
 @property (weak) IBOutlet NSTextField *mediumGearwheelValueTextField;
 @property (weak) IBOutlet NSTextField *largeGearwheelValueTextField;
 @property (weak) IBOutlet NSTextField *gearingRequiredTextField;
+
+@property (nonatomic, strong) NSMutableArray *solutions;
+
+@property (weak) IBOutlet NSTableView *solutionTableView;
+@property (weak) IBOutlet NSTableColumn *smallGearsTableColumn;
+@property (weak) IBOutlet NSTableColumn *mediumGearsTableColumn;
+@property (weak) IBOutlet NSTableColumn *largeGearsTableColumn;
+@property (weak) IBOutlet NSTableColumn *totalTableColumn;
 
 @end
 
@@ -30,6 +39,8 @@
 
 - (IBAction)solveButtonPressed:(id)sender
 {
+    self.solutions = [NSMutableArray array];
+    
     NSInteger smallGearwheelValue = self.smallGearwheelValueTextField.integerValue;
     NSInteger mediumGearwheelValue = self.mediumGearwheelValueTextField.integerValue;
     NSInteger largeGearwheelValue = self.largeGearwheelValueTextField.integerValue;
@@ -100,12 +111,50 @@
                               (isMediumGearNegative ? -1 : 1) * numberOfMediumGearsUsed,
                               (isLargeGearNegative ? -1 : 1) * numberOfLargeGearsUsed,
                               numberOfSmallGearsUsed + numberOfMediumGearsUsed + numberOfLargeGearsUsed);
+                        
+                        WatchmakerSolution *solution = [[WatchmakerSolution alloc] init];
+                        solution.numberOfSmallGearsUsed = numberOfSmallGearsUsed;
+                        solution.numberOfMediumGearsUsed = numberOfMediumGearsUsed;
+                        solution.numberOfLargeGearsUsed = numberOfLargeGearsUsed;
+                        solution.isSmallGearNegative = isSmallGearNegative;
+                        solution.isMediumGearNegative = isMediumGearNegative;
+                        solution.isLargeGearNegative = isLargeGearNegative;
+                        [self.solutions addObject:solution];
                     }
                 }
             }
         }
     }
+    [self.solutionTableView reloadData];
+}
+
+#pragma mark - NSTableViewDataSource
+
+- (NSInteger)numberOfRowsInTableView:(NSTableView *)aTableView
+{
+    return self.solutions.count;
+}
+
+- (id)tableView:(NSTableView *)aTableView objectValueForTableColumn:(NSTableColumn *)aTableColumn row:(NSInteger)rowIndex
+{
+    WatchmakerSolution *solution = [self.solutions objectAtIndex:rowIndex];
     
+    NSInteger large = (solution.isLargeGearNegative ? -1 : 1) * solution.numberOfLargeGearsUsed;
+    NSInteger medium = (solution.isMediumGearNegative ? -1 : 1) * solution.numberOfMediumGearsUsed;
+    NSInteger small = (solution.isSmallGearNegative ? -1 : 1) * solution.numberOfSmallGearsUsed;
+    
+    if (aTableColumn == self.smallGearsTableColumn) {
+        return @(small);
+    }
+    else if (aTableColumn == self.mediumGearsTableColumn) {
+        return @(medium);
+    }
+    else if (aTableColumn == self.largeGearsTableColumn) {
+        return @(large);
+    }
+    else {
+        return  @(solution.numberOfLargeGearsUsed + solution.numberOfMediumGearsUsed + solution.numberOfSmallGearsUsed);
+    }
 }
 
 @end
