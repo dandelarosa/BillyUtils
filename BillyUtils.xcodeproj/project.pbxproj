@@ -18,6 +18,8 @@
 		24C732D318CD27BE0055F706 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24C732B218CD27BE0055F706 /* Cocoa.framework */; };
 		24C732DB18CD27BE0055F706 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 24C732D918CD27BE0055F706 /* InfoPlist.strings */; };
 		24C732DD18CD27BE0055F706 /* BillyUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C732DC18CD27BE0055F706 /* BillyUtilsTests.m */; };
+		24C732E918CD280C0055F706 /* WatchmakerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C732E718CD280C0055F706 /* WatchmakerViewController.m */; };
+		24C732EA18CD280C0055F706 /* WatchmakerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24C732E818CD280C0055F706 /* WatchmakerViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,9 @@
 		24C732D818CD27BE0055F706 /* BillyUtilsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BillyUtilsTests-Info.plist"; sourceTree = "<group>"; };
 		24C732DA18CD27BE0055F706 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		24C732DC18CD27BE0055F706 /* BillyUtilsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BillyUtilsTests.m; sourceTree = "<group>"; };
+		24C732E618CD280C0055F706 /* WatchmakerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WatchmakerViewController.h; sourceTree = "<group>"; };
+		24C732E718CD280C0055F706 /* WatchmakerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WatchmakerViewController.m; sourceTree = "<group>"; };
+		24C732E818CD280C0055F706 /* WatchmakerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WatchmakerViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +123,9 @@
 				24C732C418CD27BE0055F706 /* AppDelegate.h */,
 				24C732C518CD27BE0055F706 /* AppDelegate.m */,
 				24C732C718CD27BE0055F706 /* MainMenu.xib */,
+				24C732E618CD280C0055F706 /* WatchmakerViewController.h */,
+				24C732E718CD280C0055F706 /* WatchmakerViewController.m */,
+				24C732E818CD280C0055F706 /* WatchmakerViewController.xib */,
 				24C732CA18CD27BE0055F706 /* Images.xcassets */,
 				24C732B918CD27BE0055F706 /* Supporting Files */,
 			);
@@ -234,6 +242,7 @@
 				24C732CB18CD27BE0055F706 /* Images.xcassets in Resources */,
 				24C732C318CD27BE0055F706 /* Credits.rtf in Resources */,
 				24C732C918CD27BE0055F706 /* MainMenu.xib in Resources */,
+				24C732EA18CD280C0055F706 /* WatchmakerViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +263,7 @@
 			files = (
 				24C732C618CD27BE0055F706 /* AppDelegate.m in Sources */,
 				24C732BF18CD27BE0055F706 /* main.m in Sources */,
+				24C732E918CD280C0055F706 /* WatchmakerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,6 +397,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BillyUtils/BillyUtils-Prefix.pch";
 				INFOPLIST_FILE = "BillyUtils/BillyUtils-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -400,6 +411,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BillyUtils/BillyUtils-Prefix.pch";
 				INFOPLIST_FILE = "BillyUtils/BillyUtils-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

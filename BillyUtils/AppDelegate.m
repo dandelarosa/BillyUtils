@@ -7,12 +7,20 @@
 //
 
 #import "AppDelegate.h"
+#import "WatchmakerViewController.h"
+
+@interface AppDelegate ()
+
+@property (nonatomic, strong) IBOutlet WatchmakerViewController *watchmakerViewController;
+
+@end
 
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
+    self.watchmakerViewController = [[WatchmakerViewController alloc] initWithNibName:@"WatchmakerViewController" bundle:nil];
+    [self.window.contentView addSubview:self.watchmakerViewController.view];
 }
 
 @end
