@@ -20,7 +20,19 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     self.watchmakerViewController = [[WatchmakerViewController alloc] initWithNibName:@"WatchmakerViewController" bundle:nil];
-    [self.window.contentView addSubview:self.watchmakerViewController.view];
+    NSView *subview = self.watchmakerViewController.view;
+    [self.window.contentView addSubview:subview];
+    [subview setTranslatesAutoresizingMaskIntoConstraints:NO];
+    [self.window.contentView addConstraints:[NSLayoutConstraint
+                               constraintsWithVisualFormat:@"H:|-0-[subview]-0-|"
+                               options:NSLayoutFormatDirectionLeadingToTrailing
+                               metrics:nil
+                               views:NSDictionaryOfVariableBindings(subview)]];
+    [self.window.contentView addConstraints:[NSLayoutConstraint
+                               constraintsWithVisualFormat:@"V:|-0-[subview]-0-|"
+                               options:NSLayoutFormatDirectionLeadingToTrailing
+                               metrics:nil
+                               views:NSDictionaryOfVariableBindings(subview)]];
 }
 
 @end
