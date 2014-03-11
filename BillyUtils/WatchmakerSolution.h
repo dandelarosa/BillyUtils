@@ -18,4 +18,6 @@
 @property (nonatomic, assign) BOOL isMediumGearNegative;
 @property (nonatomic, assign) BOOL isLargeGearNegative;
 
+- (NSInteger)totalGearsUsed;
+
 @end

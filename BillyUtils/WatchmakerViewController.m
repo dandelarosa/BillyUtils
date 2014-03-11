@@ -153,7 +153,7 @@
         return @(large);
     }
     else {
-        return  @(solution.numberOfLargeGearsUsed + solution.numberOfMediumGearsUsed + solution.numberOfSmallGearsUsed);
+        return  @(solution.totalGearsUsed);
     }
 }
 

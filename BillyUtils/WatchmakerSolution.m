@@ -10,4 +10,9 @@
 
 @implementation WatchmakerSolution
 
+- (NSInteger)totalGearsUsed
+{
+    return self.numberOfSmallGearsUsed + self.numberOfMediumGearsUsed + self.numberOfLargeGearsUsed;
+}
+
 @end
