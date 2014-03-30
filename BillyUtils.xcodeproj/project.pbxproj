@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		249CE8D718E7907600E09DF2 /* WatchmakerSolverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 249CE8D518E7907600E09DF2 /* WatchmakerSolverViewController.m */; };
+		249CE8D818E7907600E09DF2 /* WatchmakerSolverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 249CE8D618E7907600E09DF2 /* WatchmakerSolverViewController.xib */; };
 		24C732B318CD27BE0055F706 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24C732B218CD27BE0055F706 /* Cocoa.framework */; };
 		24C732BD18CD27BE0055F706 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 24C732BB18CD27BE0055F706 /* InfoPlist.strings */; };
 		24C732BF18CD27BE0055F706 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C732BE18CD27BE0055F706 /* main.m */; };
@@ -34,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		249CE8D418E7907600E09DF2 /* WatchmakerSolverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WatchmakerSolverViewController.h; sourceTree = "<group>"; };
+		249CE8D518E7907600E09DF2 /* WatchmakerSolverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WatchmakerSolverViewController.m; sourceTree = "<group>"; };
+		249CE8D618E7907600E09DF2 /* WatchmakerSolverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WatchmakerSolverViewController.xib; sourceTree = "<group>"; };
 		24C732AF18CD27BE0055F706 /* BillyUtils.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BillyUtils.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24C732B218CD27BE0055F706 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		24C732B518CD27BE0055F706 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -129,6 +134,9 @@
 				24C732E618CD280C0055F706 /* WatchmakerViewController.h */,
 				24C732E718CD280C0055F706 /* WatchmakerViewController.m */,
 				24C732E818CD280C0055F706 /* WatchmakerViewController.xib */,
+				249CE8D418E7907600E09DF2 /* WatchmakerSolverViewController.h */,
+				249CE8D518E7907600E09DF2 /* WatchmakerSolverViewController.m */,
+				249CE8D618E7907600E09DF2 /* WatchmakerSolverViewController.xib */,
 				37A4CDA618CE70FD00B1E0F1 /* WatchmakerSolution.h */,
 				37A4CDA718CE70FD00B1E0F1 /* WatchmakerSolution.m */,
 				24C732CA18CD27BE0055F706 /* Images.xcassets */,
@@ -247,6 +255,7 @@
 				24C732CB18CD27BE0055F706 /* Images.xcassets in Resources */,
 				24C732C318CD27BE0055F706 /* Credits.rtf in Resources */,
 				24C732C918CD27BE0055F706 /* MainMenu.xib in Resources */,
+				249CE8D818E7907600E09DF2 /* WatchmakerSolverViewController.xib in Resources */,
 				24C732EA18CD280C0055F706 /* WatchmakerViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				249CE8D718E7907600E09DF2 /* WatchmakerSolverViewController.m in Sources */,
 				24C732C618CD27BE0055F706 /* AppDelegate.m in Sources */,
 				24C732BF18CD27BE0055F706 /* main.m in Sources */,
 				24C732E918CD280C0055F706 /* WatchmakerViewController.m in Sources */,

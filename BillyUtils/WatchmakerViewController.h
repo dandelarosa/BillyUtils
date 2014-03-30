@@ -10,4 +10,6 @@
 
 @interface WatchmakerViewController : NSViewController
 
+- (void)setupView;
+
 @end

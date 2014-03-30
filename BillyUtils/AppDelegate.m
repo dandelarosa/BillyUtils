@@ -33,6 +33,7 @@
                                options:NSLayoutFormatDirectionLeadingToTrailing
                                metrics:nil
                                views:NSDictionaryOfVariableBindings(subview)]];
+    [self.watchmakerViewController setupView];
 }
 
 @end
